@@ -2,31 +2,28 @@
 #include <cstring>
 using namespace std;
 
-int countWords(char** input) {
-    int wordCount = 0;
-    bool inWord = false;
-
-    while (**input) {
-        if (isspace(**input)) {
-            inWord = false;
-        } else if (!inWord) {
-            inWord = true;
+int countWords(char **input)
+{
+    int wordCount = 1;
+    while (**input)
+    {
+        if (isspace(**input))
             wordCount++;
-        }
         (*input)++;
     }
 
     return wordCount;
 }
 
-int main() {
+int main()
+{
     const int maxLen = 1000;
     char input[maxLen];
     cin.getline(input, maxLen);
 
-    char* inputPtr = input;
+    char *inputPtr = input;
     int res = countWords(&inputPtr);
-    cout <<res << endl;
+    cout << res << endl;
 
     return 0;
 }
