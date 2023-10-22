@@ -1,19 +1,18 @@
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
-    
-    string s,s2;
-    getline(cin,s);
-    getline(cin,s2);
+
+    string s, copy;
+    getline(cin, s);
+    getline(cin, copy);
 
     cout <<"The first string before swapping is: " <<s;
-    cout <<"\nThe second string before swapping is: " <<s2;
-    s.swap(s2);
-    cout <<"\nThe first string before swapping is: " <<s;
-    cout <<"\nThe second string before swapping is: " <<s2;
+    cout <<"\nThe second string before swapping is: " <<copy;
+    s.swap(copy);
+    cout <<"\nThe first string after swapping is: " <<s;
+    cout <<"\nThe second string after swapping is: " <<copy;
 
     return 0;
 }

@@ -1,6 +1,6 @@
 import pyautogui,time
 time.sleep(2)
-f = open("./NEOCOLAB/neoque39.cpp","r")
+f = open("./NEOCOLAB/neoque46.cpp","r")
 data = f.readlines()
 
 for i in data:
