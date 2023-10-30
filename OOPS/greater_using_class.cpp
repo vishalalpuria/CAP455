@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// works in turbo c
 class xyz;
 class abc
 {

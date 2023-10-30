@@ -4,12 +4,11 @@ int main()
 {
     const int a = 10;
 
-
-    // *(int *)&a = 13;
+    
+    *(int *)&a = 13;
     // OR
-    // int *ptr = (int *)&a;
-    // *ptr = 13;
-
+    int *ptr = (int *)&a;
+    *ptr = 13;
 
     printf("%d",a);
     return 0;
