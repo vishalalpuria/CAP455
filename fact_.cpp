@@ -5,6 +5,8 @@
 // 4. using class - Factorial, DM- int n, int fact, get() , display() constructor also bnana hai
 // 5. with the help of friend function approach
 
+
+// 1. using loop statement
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -26,7 +28,7 @@
 // }
 
 
-
+// 2. using function - argument and return type
 // #include <iostream>
 // using namespace std;
 // int fun1(int n)
@@ -53,7 +55,7 @@
 //     return 0;
 // }
 
-
+// 3. using recursion
 // #include <iostream>
 // using namespace std;
 // int fact(int n)
