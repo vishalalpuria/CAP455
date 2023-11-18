@@ -20,19 +20,23 @@ int main()
 {   
     string s = "hello";
     string s2;
-    //Opening file using constructor and writing in it
 
-    // ofstream myobject("sample.txt"); // write operation 
-    // myobject << s;
+    // Opening file using constructor and writing in it
 
+    ofstream myobject("sample.txt"); // write operation 
+    myobject << s;
+
+    // myobject.close(); // for closing the file object
 
     //Opening file using constructor and reading from it
 
-    ifstream myobject("sample.txt"); // read operation 
+    // ifstream myobject("sample.txt"); // read operation 
     // myobject >> s2; // it will read only one word
-    getline(myobject,s2); // it will read one line at once
+    // getline(myobject,s2); // it will read one line at once
+
     cout << s2;
 
+    // myobject.close();
 
 
     return 0;
