@@ -5,7 +5,6 @@
 // 4. using class - Factorial, DM- int n, int fact, get() , display() constructor also bnana hai
 // 5. with the help of friend function approach
 
-
 // 1. using loop statement
 // #include <iostream>
 // using namespace std;
@@ -27,7 +26,6 @@
 //     return 0;
 // }
 
-
 // 2. using function - argument and return type
 // #include <iostream>
 // using namespace std;
@@ -44,7 +42,7 @@
 //             fact = fact * i;
 //     }
 //     return fact;
-    
+
 // }
 // int main()
 // {
@@ -73,7 +71,6 @@
 
 //     return 0;
 // }
-
 
 // 4. using class - Factorial, DM- int n, int fact, get() , display() constructor also bnana hai
 // #include <iostream>
@@ -113,8 +110,7 @@
 //     return 0;
 // }
 
-
-// 5. Using the friend function approach 
+// 5. Using the friend function approach
 // #include <iostream>
 // using namespace std;
 // class Factorial
@@ -151,5 +147,47 @@
 //     int c;
 //     cin >>c;
 //     fun(c);
+//     return 0;
+// }
+
+// 5. Using the friend function approach (again sir's method)
+// #include <iostream>
+// using namespace std;
+// class Fact
+// {
+//     int n, f;
+
+// public:
+//     void get()
+//     {
+//         f = 1;
+//         cout << "Enter a no.";
+//         cin >> n;
+//     }
+//     int T();
+//     void cal();
+//     friend int result(Fact);
+// };
+// void Fact::cal()
+// {
+//     int i;
+//     for (i = 1; i <= n; i++)
+//         f = f * i;
+// }
+// int Fact::T()
+// {
+//     return (f);
+// }
+// int result(Fact om)
+// {
+//     return (om.f);
+// }
+// int main()
+// {
+//     Fact obj;
+//     obj.get();
+//     obj.cal();
+//     int r = result(obj);
+//     cout << "Factorial = " << r;
 //     return 0;
 // }

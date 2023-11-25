@@ -18,7 +18,6 @@ int main()
         getline(fin,g);
         cout << g;
     }
-    fin.
-    close();
+    fin.close();
     return 0;
 }
