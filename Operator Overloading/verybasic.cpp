@@ -5,7 +5,7 @@ struct MyNumber {
 };
 
 // Overloading the '+' operator as a global function
-MyNumber operator+(const MyNumber& a, const MyNumber& b) {
+MyNumber operator+(MyNumber a, MyNumber b) {
     MyNumber result;
     result.value = a.value + b.value;
     return result;

@@ -14,6 +14,16 @@ public:
     }
     void cal(void);
     float result();
+    int fun()
+    {
+        // return r;
+
+        // or we can write this
+        // return this ->r;
+        // or 
+        return (*this).r;
+
+    }
 };
 void Circle::cal(void)
 {
@@ -29,5 +39,8 @@ int main()
     obj.init(5);
     obj.cal();
     cout << "Area = " << obj.result();
+
+
+    cout <<"\nvalue returned by fun : "<< obj.fun();
     return 0;
 }
